@@ -16,7 +16,7 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 
 const FeaturedProfile = () => {
   return (
-    <div className="mt-52 mx-auto container">
+    <div className="mt-52 mx-auto container overflow-hidden z-50">
       <div className="flex justify-between items-center">
         <h1 className="md:text-3xl sm:xl font-semibold">
           Featured profile this week
