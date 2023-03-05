@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const FeaturedJobs = () => {
   return (
@@ -150,9 +151,9 @@ const FeaturedJobs = () => {
       </div>
 
       <div className="flex justify-center">
-        <button className="btn btn-primary rounded-full px-7 mt-14">
+        <Link to="/jobs" className="btn btn-primary rounded-full px-7 mt-14">
           View More
-        </button>
+        </Link>
       </div>
     </div>
   );

@@ -1,6 +1,29 @@
 import React from "react";
 import Slider from "react-slick";
 
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={`${className} masudNext`}
+      style={{ ...style, display: "block", background: "red" }}
+      onClick={onClick}>
+      hello
+    </div>
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={`${className} masudPrev`}
+      style={{ ...style, display: "block", background: "green" }}
+      onClick={onClick}
+    />
+  );
+}
+
 const News = () => {
   const settings = {
     dots: true,
@@ -8,7 +31,9 @@ const News = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false,
+    arrows: true,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
   };
 
   return (
