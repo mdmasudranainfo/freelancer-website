@@ -19,3 +19,8 @@ code {
 body {
   background-color: #fdfdfd;
 }
+html,
+body {
+  scroll-behavior: smooth;
+  transition: 0.5s;
+}

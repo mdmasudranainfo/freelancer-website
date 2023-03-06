@@ -28,7 +28,7 @@ const LatestNews = () => {
 
   return (
     <div className="container mx-auto">
-      <div className="text-left py-[60px]">
+      <div className="text-left py-[60px] p-1">
         <h2 className="text-[40px] leading-[60px] font-semibold text-[#363848]">
           Latest News
         </h2>

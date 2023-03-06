@@ -11,28 +11,28 @@ const CounterSection = () => {
         style={{ backgroundImage: `url(${backround})` }}>
         <div className="text-white p-10 items-center">
           <h2 className="text-6xl  mb-5">
-            <CountUp enableScrollSpy duration={3} end={36789} />+
+            <CountUp enableScrollSpy duration={1} end={36789} />+
           </h2>
           <p>Talented Freelancer</p>
         </div>
         <div className="text-white p-10 items-center">
           <h2 className="text-6xl  mb-5">
             {" "}
-            <CountUp enableScrollSpy duration={3} end={458973} />
+            <CountUp enableScrollSpy duration={1} end={458973} />
           </h2>
           <p>VIsitors</p>
         </div>
         <div className="text-white p-10 items-center">
           <h2 className="text-6xl  mb-5">
             {" "}
-            <CountUp enableScrollSpy duration={3} end={56461} />
+            <CountUp enableScrollSpy duration={1} end={56461} />
           </h2>
           <p>Contract Made</p>
         </div>
         <div className="text-white p-10 items-center">
           <h2 className="text-6xl  mb-5">
             {" "}
-            <CountUp enableScrollSpy duration={3} end={852} /> K
+            <CountUp enableScrollSpy duration={1} end={852} /> K
           </h2>
           <p>Companies</p>
         </div>

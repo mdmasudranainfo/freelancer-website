@@ -11,7 +11,7 @@ import {
 const Footer = () => {
   return (
     <div data-aos="fade-up" className="bg-[#1F2131] text-white mt-24 py-11">
-      <div className="container mx-auto">
+      <div className="container mx-auto p-2">
         {/* subscribe */}
         <div className=" lg:flex sm:inline-block justify-between">
           <h2 className="xxl:text-4xl xl:text-2xl mb-10">
@@ -150,8 +150,10 @@ const Footer = () => {
       </div>
       <div className="divider"></div>
       <div className="md:flex block  justify-between  mt-6 container mx-auto ">
-        <p>Ziro Freelancer Landing Website - © 2020 All Rights Reserved</p>
-        <p>Made with ♥ by Peterdraw</p>
+        <p className="mt-3">
+          Ziro Freelancer Landing Website - © 2020 All Rights Reserved
+        </p>
+        <p className="mt-3">Made with ♥ by Peterdraw</p>
       </div>
     </div>
   );

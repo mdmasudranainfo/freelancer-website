@@ -1,4 +1,5 @@
 import React from "react";
+import { FaTimes } from "react-icons/fa";
 
 const StartJob = () => {
   return (
@@ -59,12 +60,46 @@ const StartJob = () => {
             </div>
           </div>
         </div>
-        <div className="">
+        <div className=" relative">
           <img
             className="w-full"
-            src="https://i.ibb.co/X48084p/righSide.png"
+            src="https://i.ibb.co/wypbXY2/righSide.png"
             alt=""
           />
+          <label
+            htmlFor="my-modal-1"
+            className="absolute h-full w-full flex justify-center items-center top-0 left-0">
+            <img
+              className=" cursor-pointer"
+              src="https://i.ibb.co/HVY5p5D/icon-Playvideo.png"
+              alt=""
+            />
+          </label>
+        </div>
+      </div>
+      <input type="checkbox" id="my-modal-1" className="modal-toggle" />
+      <div className="modal">
+        <div className="modal-box w-11/12 max-w-5xl">
+          <iframe
+            className="w-full h-96
+            .
+            
+            
+            "
+            width=""
+            height=""
+            src="https://www.youtube.com/embed/O8kmknVFyKQ?controls=0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+          <div className="modal-action">
+            <label
+              htmlFor="my-modal-1"
+              className="btn btn-primary rounded-full">
+              <FaTimes />
+            </label>
+          </div>
         </div>
       </div>
     </div>
