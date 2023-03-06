@@ -11,7 +11,7 @@ const EventList = () => {
 
       {/* events */}
 
-      <div className="container mx-auto mt-12">
+      <div data-aos="fade-up" className="container mx-auto mt-12">
         <div className=" lg:flex md:block mt-2 justify-between items-center ">
           <h1 className="font-bold text-3xl">Upcoming Events</h1>
           <div className=" flex gap-2 mt-5 md:mt-0  ">
@@ -43,8 +43,10 @@ const EventList = () => {
 
         {/* grid event */}
 
-        <div className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 gap-11 mt-16">
-          <div className=" shadow-sm rounded-lg">
+        <div
+          data-aos="fade-up"
+          className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 gap-11 mt-16">
+          <div data-aos="fade-up" className=" shadow-sm rounded-lg">
             <img
               className="max-w-full"
               src="https://i.ibb.co/V2vj4c2/image.png"
@@ -98,7 +100,7 @@ const EventList = () => {
             </div>
           </div>
 
-          <div className=" shadow-sm rounded-lg">
+          <div data-aos="fade-up" className=" shadow-sm rounded-lg">
             <img
               className="max-w-full"
               src="https://i.ibb.co/ZV5cjxr/image2.png"
@@ -162,7 +164,7 @@ const EventList = () => {
             </div>
           </div>
 
-          <div className=" shadow-sm rounded-lg">
+          <div data-aos="fade-up" className=" shadow-sm rounded-lg">
             <img
               className="max-w-full"
               src="https://i.ibb.co/V2vj4c2/image.png"
@@ -215,7 +217,8 @@ const EventList = () => {
               </p>
             </div>
           </div>
-          <div className=" shadow-sm rounded-lg">
+
+          <div data-aos="fade-up" className=" shadow-sm rounded-lg">
             <img
               className="max-w-full"
               src="https://i.ibb.co/M2d58g5/image5.png"
@@ -277,7 +280,7 @@ const EventList = () => {
               </p>
             </div>
           </div>
-          <div className=" shadow-sm rounded-lg">
+          <div data-aos="fade-up" className=" shadow-sm rounded-lg">
             <img
               className="max-w-full"
               src="https://i.ibb.co/ZV5cjxr/image2.png"
@@ -340,7 +343,194 @@ const EventList = () => {
             </div>
           </div>
 
-          <div className=" shadow-sm rounded-lg">
+          <div data-aos="fade-up" className=" shadow-sm rounded-lg">
+            <img
+              className="max-w-full"
+              src="https://i.ibb.co/M2d58g5/image5.png"
+              alt=""
+            />
+
+            <div className=" p-5">
+              {/* icone */}
+
+              <div className="flex gap-3 ">
+                <div className=" inline-block text-center ease-in duration-200 hover:bg-[#30C736] bg-neutral rounded-full py-2 px-1 text-white mt-[-70px] ">
+                  <h2 className="text-4xl font-semibold">20</h2>
+                  <span className="block">Nov</span>
+                  <svg
+                    width="61"
+                    height="60"
+                    viewBox="0 0 61 60"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect
+                      x="0.490234"
+                      width="60"
+                      height="60"
+                      rx="30"
+                      fill="white"
+                      fill-opacity="0.11"
+                    />
+                    <g clip-path="url(#clip0_49_1515)">
+                      <path
+                        d="M36.1152 20.0548C33.2725 20.0548 31.4461 21.915 30.4902 23.5862C29.5344 21.915 27.708 20.0548 24.8652 20.0548C21.2576 20.0548 18.4902 22.8179 18.4902 26.4825C18.4902 30.4561 21.9573 33.1622 27.1346 37.2594C29.6697 39.2638 29.8326 39.4162 30.4902 39.9449C31.027 39.5134 31.324 39.2534 33.8459 37.2594C39.0232 33.1622 42.4902 30.4561 42.4902 26.4825C42.4902 22.8179 39.7229 20.0548 36.1152 20.0548Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_49_1515">
+                        <rect
+                          width="24"
+                          height="24"
+                          fill="white"
+                          transform="translate(18.4902 18)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div className="">
+                  <p className="text-lg text-[#FE8D4D]">ACCOUNTING</p>
+                  <h3 className="text-xl font-semibold">
+                    Bussiness Plan in Pandemic with Famous Native Speaker{" "}
+                  </h3>
+                </div>
+              </div>
+
+              {/* icone */}
+
+              <p className="mt-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div data-aos="fade-up" className=" shadow-sm rounded-lg">
+            <img
+              className="max-w-full"
+              src="https://i.ibb.co/M2d58g5/image5.png"
+              alt=""
+            />
+
+            <div className=" p-5">
+              {/* icone */}
+
+              <div className="flex gap-3 ">
+                <div className=" inline-block text-center ease-in duration-200 hover:bg-[#30C736] bg-neutral rounded-full py-2 px-1 text-white mt-[-70px] ">
+                  <h2 className="text-4xl font-semibold">20</h2>
+                  <span className="block">Nov</span>
+                  <svg
+                    width="61"
+                    height="60"
+                    viewBox="0 0 61 60"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect
+                      x="0.490234"
+                      width="60"
+                      height="60"
+                      rx="30"
+                      fill="white"
+                      fill-opacity="0.11"
+                    />
+                    <g clip-path="url(#clip0_49_1515)">
+                      <path
+                        d="M36.1152 20.0548C33.2725 20.0548 31.4461 21.915 30.4902 23.5862C29.5344 21.915 27.708 20.0548 24.8652 20.0548C21.2576 20.0548 18.4902 22.8179 18.4902 26.4825C18.4902 30.4561 21.9573 33.1622 27.1346 37.2594C29.6697 39.2638 29.8326 39.4162 30.4902 39.9449C31.027 39.5134 31.324 39.2534 33.8459 37.2594C39.0232 33.1622 42.4902 30.4561 42.4902 26.4825C42.4902 22.8179 39.7229 20.0548 36.1152 20.0548Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_49_1515">
+                        <rect
+                          width="24"
+                          height="24"
+                          fill="white"
+                          transform="translate(18.4902 18)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div className="">
+                  <p className="text-lg text-[#FE8D4D]">ACCOUNTING</p>
+                  <h3 className="text-xl font-semibold">
+                    Bussiness Plan in Pandemic with Famous Native Speaker{" "}
+                  </h3>
+                </div>
+              </div>
+
+              {/* icone */}
+
+              <p className="mt-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div data-aos="fade-up" className=" shadow-sm rounded-lg">
+            <img
+              className="max-w-full"
+              src="https://i.ibb.co/ZV5cjxr/image2.png"
+              alt=""
+            />
+
+            <div className=" p-5">
+              {/* icone */}
+
+              <div className="flex gap-3 ">
+                <div className=" inline-block text-center ease-in duration-200 hover:bg-[#30C736] bg-neutral rounded-full py-2 px-1 text-white mt-[-70px] ">
+                  <h2 className="text-4xl font-semibold">20</h2>
+                  <span className="block">Nov</span>
+                  <svg
+                    width="61"
+                    height="60"
+                    viewBox="0 0 61 60"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect
+                      x="0.490234"
+                      width="60"
+                      height="60"
+                      rx="30"
+                      fill="white"
+                      fill-opacity="0.11"
+                    />
+                    <g clip-path="url(#clip0_49_1515)">
+                      <path
+                        d="M36.1152 20.0548C33.2725 20.0548 31.4461 21.915 30.4902 23.5862C29.5344 21.915 27.708 20.0548 24.8652 20.0548C21.2576 20.0548 18.4902 22.8179 18.4902 26.4825C18.4902 30.4561 21.9573 33.1622 27.1346 37.2594C29.6697 39.2638 29.8326 39.4162 30.4902 39.9449C31.027 39.5134 31.324 39.2534 33.8459 37.2594C39.0232 33.1622 42.4902 30.4561 42.4902 26.4825C42.4902 22.8179 39.7229 20.0548 36.1152 20.0548Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_49_1515">
+                        <rect
+                          width="24"
+                          height="24"
+                          fill="white"
+                          transform="translate(18.4902 18)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div className="">
+                  <p className="text-lg text-[#FE8D4D]">ART EXIBITHION</p>
+                  <h3 className="text-xl font-semibold">
+                    Paris Designer Meetup with Ziro Partner{" "}
+                  </h3>
+                </div>
+              </div>
+
+              {/* icone */}
+
+              <p className="mt-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+
+          <div data-aos="fade-up" className=" shadow-sm rounded-lg">
             <img
               className="max-w-full"
               src="https://i.ibb.co/M2d58g5/image5.png"

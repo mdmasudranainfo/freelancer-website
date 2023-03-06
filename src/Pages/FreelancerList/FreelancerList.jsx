@@ -117,13 +117,15 @@ const FreelancerList = () => {
       </div>
 
       <div className=" container mx-auto">
-        <div className="JobListSlider ">
+        <div data-aos="fade-up" className="JobListSlider ">
           <FeaturedProfile />
         </div>
 
         {/* profile freelancer */}
 
-        <div className=" xl:flex md:block justify-between items-center">
+        <div
+          data-aos="fade-up"
+          className=" xl:flex md:block justify-between items-center">
           <h1 className="text-3xl font-semibold">Showing 87 of 234 Peoples</h1>
 
           <div className=" grid md:grid-cols-6 gap-4 sm:grid-cols-2 items-center">
@@ -244,9 +246,11 @@ const FreelancerList = () => {
           </div>
         </div>
         {/* profile freelancer  grid*/}
-        <div className=" grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 mt-9">
+        <div
+          data-aos="fade-up"
+          className=" grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 mt-9">
           {parsons.map((profile) => (
-            <div className=" shadow-md p-10 rounded-xl ">
+            <div data-aos="fade-up" className=" shadow-md p-10 rounded-xl ">
               <div className=" flex justify-center relative">
                 <img src={profile?.img} alt="" />
                 <button

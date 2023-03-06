@@ -10,7 +10,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className="bg-[#1F2131] text-white mt-24 py-11">
+    <div data-aos="fade-up" className="bg-[#1F2131] text-white mt-24 py-11">
       <div className="container mx-auto">
         {/* subscribe */}
         <div className=" lg:flex sm:inline-block justify-between">

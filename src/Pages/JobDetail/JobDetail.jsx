@@ -26,7 +26,9 @@ const JobDetail = () => {
 
       <div className="container mx-auto mt-[-100px]">
         <div className="grid lg:grid-cols-3 xl:gap-9 lg:gap-5 md:grid-cols-1">
-          <div className=" p-9 shadow-xl rounded-3xl bg-white">
+          <div
+            data-aos="fade-up"
+            className=" p-9 shadow-xl rounded-3xl bg-white">
             <div className=" flex flex-col items-center">
               <img
                 className=""
@@ -86,7 +88,9 @@ const JobDetail = () => {
               </button>
             </div>
           </div>
-          <div className="lg:col-span-2 md:grid-cols-1 lg:mt-0 md:mt-10 p-9 shadow-xl rounded-3xl bg-white">
+          <div
+            data-aos="fade-up"
+            className="lg:col-span-2 md:grid-cols-1 lg:mt-0 md:mt-10 p-9 shadow-xl rounded-3xl bg-white z-40">
             <div className=" md:flex sm:block justify-between">
               <div className="">
                 <h2 className="text-4xl font-bold ">Lead UI/UX Designer</h2>
@@ -152,7 +156,7 @@ const JobDetail = () => {
               </p>
             </div>
             {/* gellary */}
-            <div className=" mt-14">
+            <div data-aos="fade-up" className=" mt-14">
               <h2 className="font-semibold">Galery</h2>
               <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1. gap-6 mt-6 justify-items-center">
                 <img src="https://i.ibb.co/n1C41Gr/4image.png" alt="" />
@@ -167,8 +171,8 @@ const JobDetail = () => {
 
       {/* related jobs jobs */}
 
-      <div className=" container mx-auto mt-52">
-        <div className=" flex items-center justify-between">
+      <div data-aos="fade-up" className=" container mx-auto mt-52">
+        <div data-aos="fade-up" className=" flex items-center justify-between">
           <h1 className="text-4xl font-semibold">Related jobs</h1>
           <button className="btn bg-primary text-white rounded-full">
             View more
@@ -177,7 +181,7 @@ const JobDetail = () => {
 
         {/* jobs cards */}
         <div className="mt-16 grid  xl:grid-cols-4  lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-7 mb-60">
-          <div className="p-5 shadow-xl rounded-md ">
+          <div data-aos="fade-up" className="p-5 shadow-xl rounded-md ">
             <div className=" flex justify-end">
               <img
                 className="cursor-pointer"
@@ -213,7 +217,7 @@ const JobDetail = () => {
               </button>
             </div>
           </div>
-          <div className="p-5 shadow-xl rounded-md ">
+          <div data-aos="fade-up" className="p-5 shadow-xl rounded-md ">
             <div className=" flex justify-end">
               <img
                 className="cursor-pointer"
@@ -249,7 +253,7 @@ const JobDetail = () => {
               </button>
             </div>
           </div>
-          <div className="p-5 shadow-xl rounded-md ">
+          <div data-aos="fade-up" className="p-5 shadow-xl rounded-md ">
             <div className=" flex justify-end">
               <img
                 className="cursor-pointer"
@@ -285,7 +289,7 @@ const JobDetail = () => {
               </button>
             </div>
           </div>
-          <div className="p-5 shadow-xl rounded-md ">
+          <div data-aos="fade-up" className="p-5 shadow-xl rounded-md ">
             <div className=" flex justify-end">
               <img
                 className="cursor-pointer"

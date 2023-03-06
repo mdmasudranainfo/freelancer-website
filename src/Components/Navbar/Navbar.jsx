@@ -65,7 +65,7 @@ const Navbar = () => {
               {menuItems}
             </ul>
           </div>
-          <Link className="btn btn-ghost normal-case text-xl">
+          <Link to="/" className="btn btn-ghost normal-case text-xl">
             <img
               className="w-36"
               src="https://i.ibb.co/NnKzstq/logo.png"
@@ -77,12 +77,12 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{menuItems}</ul>
         </div>
         <div className="navbar-end">
-          <Link className="btn m-1 bg-base-200 rounded-full border-0 hover:bg-primary text-neutral hover:text-base-200 hidden lg:flex">
+          <Link className="capitalize btn m-1 bg-base-200 rounded-full border-0 hover:bg-primary text-neutral hover:text-base-200 hidden lg:flex">
             Login
           </Link>
           <Link
             to="/freelancerList"
-            className="btn m-1 bg-base-200 rounded-full border-0 hover:bg-primary text-neutral hover:text-base-200">
+            className="capitalize btn m-1 bg-base-200 rounded-full border-0 hover:bg-primary text-neutral hover:text-base-200">
             Sing Up
           </Link>
         </div>

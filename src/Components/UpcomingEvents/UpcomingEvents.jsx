@@ -3,7 +3,7 @@ import { FaRegCalendar } from "react-icons/fa";
 
 const UpcomingEvents = () => {
   return (
-    <div className="container mx-auto mt-12">
+    <div data-aos="fade-up" className="container mx-auto mt-12">
       <div className=" lg:flex md:block mt-2 justify-between items-center ">
         <h1 className="font-bold text-3xl">Upcoming Events</h1>
         <div className=" flex gap-2 mt-5 md:mt-0  ">
@@ -36,7 +36,7 @@ const UpcomingEvents = () => {
       {/* grid event */}
 
       <div className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 gap-11 mt-16">
-        <div className=" shadow-sm rounded-lg">
+        <div data-aos="fade-up" className=" shadow-sm rounded-lg">
           <img
             className="max-w-full"
             src="https://i.ibb.co/V2vj4c2/image.png"
@@ -90,7 +90,7 @@ const UpcomingEvents = () => {
           </div>
         </div>
 
-        <div className=" shadow-sm rounded-lg">
+        <div data-aos="fade-up" className=" shadow-sm rounded-lg">
           <img
             className="max-w-full"
             src="https://i.ibb.co/ZV5cjxr/image2.png"
@@ -153,7 +153,7 @@ const UpcomingEvents = () => {
           </div>
         </div>
 
-        <div className=" shadow-sm rounded-lg">
+        <div data-aos="fade-up" className=" shadow-sm rounded-lg">
           <img
             className="max-w-full"
             src="https://i.ibb.co/M2d58g5/image5.png"

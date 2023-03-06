@@ -138,7 +138,9 @@ const JobShow = () => {
 
       <div className=" mt-10">
         {jobs.map((job, index) => (
-          <div className=" grid xl:grid-cols-4 md:grid-cols-2 p-7 gap-7 shadow-lg hover:shadow-2xl rounded-md mb-7 xl:justify-items-center md:justify-items-start ease-in duration-300">
+          <div
+            data-aos="fade-up"
+            className=" grid xl:grid-cols-4 md:grid-cols-2 p-7 gap-7 shadow-lg hover:shadow-2xl rounded-md mb-7 xl:justify-items-center md:justify-items-start ease-in duration-300">
             <div className=" flex items-center gap-7  ">
               <img src={job?.image} alt="" />
               <div className="">
@@ -179,7 +181,7 @@ const JobShow = () => {
         ))}
       </div>
 
-      <div className=" flex  text-center justify-center">
+      <div data-aos="fade-up" className=" flex  text-center justify-center">
         <p className="flex items-center text-primary">
           {" "}
           <svg

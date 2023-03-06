@@ -24,7 +24,7 @@ const ApplicationForm = () => {
 
       {/* job dtl */}
 
-      <div className="container mx-auto mt-[-100px]">
+      <div data-aos="fade-up" className="container mx-auto mt-[-100px]">
         <div className="grid lg:grid-cols-3 xl:gap-9 lg:gap-5 md:grid-cols-1">
           <div className=" p-9 shadow-xl rounded-3xl bg-white">
             <div className=" flex flex-col items-center">
@@ -111,7 +111,9 @@ const ApplicationForm = () => {
 
             {/* Fill the job applications */}
 
-            <div className=" mt-16 p-9 shadow-2xl rounded-3xl">
+            <div
+              data-aos="fade-up"
+              className=" mt-16 p-9 shadow-2xl rounded-3xl">
               <h2 className="text-2xl font-semibold mb-10">
                 Fill the job applications
               </h2>
@@ -119,7 +121,7 @@ const ApplicationForm = () => {
               {/* input froms */}
 
               <div className=" grid xl:grid-cols-3  gap-7">
-                <div className="">
+                <div data-aos="fade-up" className="">
                   <label className="font-semibold" htmlFor="">
                     First Name
                   </label>
@@ -129,7 +131,7 @@ const ApplicationForm = () => {
                     className="input input-bordered w-full mt-4 rounded-full"
                   />
                 </div>
-                <div className="">
+                <div data-aos="fade-up" className="">
                   <label className="font-semibold" htmlFor="">
                     Middle Name
                   </label>
@@ -139,7 +141,7 @@ const ApplicationForm = () => {
                     className="input input-bordered w-full mt-4 rounded-full"
                   />
                 </div>
-                <div className="">
+                <div data-aos="fade-up" className="">
                   <label className="font-semibold" htmlFor="">
                     Last Name
                   </label>
@@ -149,7 +151,7 @@ const ApplicationForm = () => {
                     className="input input-bordered w-full mt-4 rounded-full"
                   />
                 </div>
-                <div className="">
+                <div data-aos="fade-up" className="">
                   <label className="font-semibold" htmlFor="">
                     Birth Date
                   </label>
@@ -160,7 +162,7 @@ const ApplicationForm = () => {
                   />
                 </div>
 
-                <div className="">
+                <div data-aos="fade-up" className="">
                   <label className="font-semibold" htmlFor="">
                     Email Address
                   </label>

@@ -103,7 +103,7 @@ const LatestNews = () => {
                   srcset=""
                 />
                 <button className="btn absolute top-[23px] right-[13px] bg-[#FE8D4D] hover:bg-[#FE8D4D] border-none rounded-full font-semibold px-14 py-[18px] text-[16px] text-[#ffffff] text-[#5F4BDB]">
-                  PEOPLES
+                  TECHNOLOGY
                 </button>
 
                 <div className="news-article max-w-[90%]">
@@ -169,7 +169,7 @@ const LatestNews = () => {
                   srcset=""
                 />
                 <button className="btn absolute top-[23px] right-[13px] bg-[#FE8D4D] hover:bg-[#FE8D4D] border-none rounded-full font-semibold px-14 py-[18px] text-[16px] text-[#ffffff] text-[#5F4BDB]">
-                  PEOPLES
+                  TECHNOLOGY
                 </button>
 
                 <div className="news-article max-w-[90%]">
@@ -235,7 +235,7 @@ const LatestNews = () => {
                   srcset=""
                 />
                 <button className="btn absolute top-[23px] right-[13px] bg-[#FE8D4D] hover:bg-[#FE8D4D] border-none rounded-full font-semibold px-14 py-[18px] text-[16px] text-[#ffffff] text-[#5F4BDB]">
-                  PEOPLES
+                  TECHNOLOGY
                 </button>
 
                 <div className="news-article max-w-[90%]">
