@@ -86,8 +86,8 @@ const ApplicationForm = () => {
               </button>
             </div>
           </div>
-          <div className="lg:col-span-2 md:grid-cols-1 lg:mt-0 md:mt-10 shadow-xl rounded-3xl bg-white">
-            <div className=" xl:flex lg:block items-center justify-between shadow-lg rounded-3xl p-9">
+          <div className="lg:col-span-2 md:grid-cols-1 lg:mt-0 md:mt-10 ">
+            <div className=" xl:flex lg:block items-center justify-between shadow-lg rounded-3xl p-9 bg-white">
               <div className="">
                 <h2 className="text-2xl font-bold ">Lead UI/UX Designer</h2>
                 <p className="mt-3">Experience 2-5 years</p>

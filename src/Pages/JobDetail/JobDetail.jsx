@@ -87,12 +87,12 @@ const JobDetail = () => {
             </div>
           </div>
           <div className="lg:col-span-2 md:grid-cols-1 lg:mt-0 md:mt-10 p-9 shadow-xl rounded-3xl bg-white">
-            <div className=" flex justify-between">
+            <div className=" md:flex sm:block justify-between">
               <div className="">
                 <h2 className="text-4xl font-bold ">Lead UI/UX Designer</h2>
                 <p className="mt-3">Posted by Admin on November 12th, 2020</p>
               </div>
-              <div className="flex items-center gap-6">
+              <div className="flex items-center gap-6 md:mt-0 mt-5">
                 <button className="btn rounded-full border-none hover:btn-primary capitalize btn-primary ">
                   Apply Now
                 </button>
@@ -154,7 +154,7 @@ const JobDetail = () => {
             {/* gellary */}
             <div className=" mt-14">
               <h2 className="font-semibold">Galery</h2>
-              <div className="grid grid-cols-4 gap-6 mt-6">
+              <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1. gap-6 mt-6 justify-items-center">
                 <img src="https://i.ibb.co/n1C41Gr/4image.png" alt="" />
                 <img src="https://i.ibb.co/CMS6rJD/6image.png" alt="" />
                 <img src="https://i.ibb.co/tzKh989/2image.png" alt="" />

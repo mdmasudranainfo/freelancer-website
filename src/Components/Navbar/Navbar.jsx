@@ -5,16 +5,16 @@ const Navbar = () => {
   const menuItems = (
     <>
       <li>
-        <Link>Home</Link>
+        <Link to="/">Home</Link>
       </li>
       <li>
-        <Link>Pricing</Link>
+        <Link to="/jobs">Pricing</Link>
       </li>
       <li>
-        <Link>Blog</Link>
+        <Link to="/event">Blog</Link>
       </li>
       <li>
-        <Link>Become a member</Link>
+        <Link to="/ApplicationForm">Become a member</Link>
       </li>
 
       <div className="form-control relative hidden lg:flex">
@@ -80,7 +80,9 @@ const Navbar = () => {
           <Link className="btn m-1 bg-base-200 rounded-full border-0 hover:bg-primary text-neutral hover:text-base-200 hidden lg:flex">
             Login
           </Link>
-          <Link className="btn m-1 bg-base-200 rounded-full border-0 hover:bg-primary text-neutral hover:text-base-200">
+          <Link
+            to="/freelancerList"
+            className="btn m-1 bg-base-200 rounded-full border-0 hover:bg-primary text-neutral hover:text-base-200">
             Sing Up
           </Link>
         </div>

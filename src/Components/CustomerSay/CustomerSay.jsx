@@ -9,14 +9,16 @@ const CustomerSay = () => {
     arrows: true,
 
     infinite: true,
-    speed: 500,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 5000,
     slidesToShow: 1,
     slidesToScroll: 1,
     nextArrow: <FaArrowRight />,
     prevArrow: <FaArrowLeft className="prevButtuon" />,
   };
   return (
-    <div className=" mt-56 container mx-auto">
+    <div data-aos="fade-up" className=" mt-56 container mx-auto">
       <h1 className="text-5xl text-center font-semibold">
         What our Customer Says
       </h1>

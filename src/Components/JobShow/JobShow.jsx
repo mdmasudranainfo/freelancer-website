@@ -1,4 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { showjobs } from "../API_File/API_FILE";
+
+const jobs = showjobs;
+console.log(jobs);
 
 const JobShow = () => {
   return (
@@ -132,474 +137,46 @@ const JobShow = () => {
       {/* jobs sections */}
 
       <div className=" mt-10">
-        <div className=" grid xl:grid-cols-4 md:grid-cols-2 p-7 gap-7 shadow-lg hover:shadow-2xl rounded-md mb-7 xl:justify-items-center md:justify-items-start ease-in duration-300">
-          <div className=" flex items-center gap-7  ">
-            <img src="https://i.ibb.co/rkXzcqK/company-Logo.png" alt="" />
-            <div className="">
-              <h2 className=" text-2xl font-bold">Senior UX Designer</h2>
-              <p className="text-primary">Highspeed Studios</p>
+        {jobs.map((job, index) => (
+          <div className=" grid xl:grid-cols-4 md:grid-cols-2 p-7 gap-7 shadow-lg hover:shadow-2xl rounded-md mb-7 xl:justify-items-center md:justify-items-start ease-in duration-300">
+            <div className=" flex items-center gap-7  ">
+              <img src={job?.image} alt="" />
+              <div className="">
+                <h2 className=" text-2xl font-bold">{job?.name}</h2>
+                <p className="text-primary">{job?.work}</p>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-6">
+              <img src="https://i.ibb.co/PtVtgtQ/icSalary.png" alt="" />
+              <div className="">
+                <h2 className=" text-xl font-semibold">$14,000 - $25,000</h2>
+                <p className=" text-[#8A8A8A]">Monthly Salary</p>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-6">
+              <img src="https://i.ibb.co/5rT0StQ/ic-Location.png" alt="" />
+              <div className="">
+                <h2 className=" text-xl font-semibold">{job?.location}</h2>
+                <p className=" text-[#8A8A8A]">Location</p>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-6">
+              <Link
+                to="/JobDetail"
+                className="btn rounded-full text-primary border-none hover:btn-primary capitalize bg-[#F0EEFF]">
+                Apply Now
+              </Link>
+              <img
+                className=" cursor-pointer"
+                src="https://i.ibb.co/JBQJfJ8/btnBook.png"
+                alt=""
+              />
             </div>
           </div>
-
-          <div className="flex items-center gap-6">
-            <img src="https://i.ibb.co/PtVtgtQ/icSalary.png" alt="" />
-            <div className="">
-              <h2 className=" text-xl font-semibold">$14,000 - $25,000</h2>
-              <p className=" text-[#8A8A8A]">Monthly Salary</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-6">
-            <img src="https://i.ibb.co/5rT0StQ/ic-Location.png" alt="" />
-            <div className="">
-              <h2 className=" text-xl font-semibold">London, England</h2>
-              <p className=" text-[#8A8A8A]">Location</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-6">
-            <button className="btn rounded-full text-primary border-none hover:btn-primary capitalize bg-[#F0EEFF]">
-              Apply Now
-            </button>
-            <img
-              className=" cursor-pointer"
-              src="https://i.ibb.co/JBQJfJ8/btnBook.png"
-              alt=""
-            />
-          </div>
-        </div>
-        <div className=" grid xl:grid-cols-4 md:grid-cols-2 p-7 gap-7 shadow-lg hover:shadow-2xl rounded-md mb-7 xl:justify-items-center md:justify-items-start ease-in duration-300">
-          <div className=" flex items-center gap-7  ">
-            <img src="https://i.ibb.co/5sBfJXS/company-Logo2.png" alt="" />
-            <div className="">
-              <h2 className=" text-2xl font-bold">Senior UX Designer</h2>
-              <p className="text-primary">Highspeed Studios</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-6">
-            <img src="https://i.ibb.co/PtVtgtQ/icSalary.png" alt="" />
-            <div className="">
-              <h2 className=" text-xl font-semibold">$14,000 - $25,000</h2>
-              <p className=" text-[#8A8A8A]">Monthly Salary</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-6">
-            <img src="https://i.ibb.co/5rT0StQ/ic-Location.png" alt="" />
-            <div className="">
-              <h2 className=" text-xl font-semibold">London, England</h2>
-              <p className=" text-[#8A8A8A]">Location</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-6">
-            <button className="btn rounded-full text-primary border-none hover:btn-primary capitalize bg-[#F0EEFF]">
-              Apply Now
-            </button>
-            <img
-              className=" cursor-pointer"
-              src="https://i.ibb.co/JBQJfJ8/btnBook.png"
-              alt=""
-            />
-          </div>
-        </div>
-        <div className=" grid xl:grid-cols-4 md:grid-cols-2 p-7 gap-7 shadow-lg hover:shadow-2xl rounded-md mb-7 xl:justify-items-center md:justify-items-start ease-in duration-300">
-          <div className=" flex items-center gap-7  ">
-            <img src="https://i.ibb.co/tD32kDw/company-Logos.png" alt="" />
-            <div className="">
-              <h2 className=" text-2xl font-bold">Senior UX Designer</h2>
-              <p className="text-primary">Highspeed Studios</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-6">
-            <img src="https://i.ibb.co/PtVtgtQ/icSalary.png" alt="" />
-            <div className="">
-              <h2 className=" text-xl font-semibold">$14,000 - $25,000</h2>
-              <p className=" text-[#8A8A8A]">Monthly Salary</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-6">
-            <img src="https://i.ibb.co/5rT0StQ/ic-Location.png" alt="" />
-            <div className="">
-              <h2 className=" text-xl font-semibold">London, England</h2>
-              <p className=" text-[#8A8A8A]">Location</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-6">
-            <button className="btn rounded-full text-primary border-none hover:btn-primary capitalize bg-[#F0EEFF]">
-              Apply Now
-            </button>
-            <img
-              className=" cursor-pointer"
-              src="https://i.ibb.co/JBQJfJ8/btnBook.png"
-              alt=""
-            />
-          </div>
-        </div>
-        <div className=" grid xl:grid-cols-4 md:grid-cols-2 p-7 gap-7 shadow-lg hover:shadow-2xl rounded-md mb-7 xl:justify-items-center md:justify-items-start ease-in duration-300">
-          <div className=" flex items-center gap-7  ">
-            <img src="https://i.ibb.co/Yyj8SPD/company-Logo6.png" alt="" />
-            <div className="">
-              <h2 className=" text-2xl font-bold">Senior UX Designer</h2>
-              <p className="text-primary">Highspeed Studios</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-6">
-            <img src="https://i.ibb.co/PtVtgtQ/icSalary.png" alt="" />
-            <div className="">
-              <h2 className=" text-xl font-semibold">$14,000 - $25,000</h2>
-              <p className=" text-[#8A8A8A]">Monthly Salary</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-6">
-            <img src="https://i.ibb.co/5rT0StQ/ic-Location.png" alt="" />
-            <div className="">
-              <h2 className=" text-xl font-semibold">London, England</h2>
-              <p className=" text-[#8A8A8A]">Location</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-6">
-            <button className="btn rounded-full text-primary border-none hover:btn-primary capitalize bg-[#F0EEFF]">
-              Apply Now
-            </button>
-            <img
-              className=" cursor-pointer"
-              src="https://i.ibb.co/JBQJfJ8/btnBook.png"
-              alt=""
-            />
-          </div>
-        </div>
-        <div className=" grid xl:grid-cols-4 md:grid-cols-2 p-7 gap-7 shadow-lg hover:shadow-2xl rounded-md mb-7 xl:justify-items-center md:justify-items-start ease-in duration-300">
-          <div className=" flex items-center gap-7  ">
-            <img src="https://i.ibb.co/PYc6sMJ/company-Logo4.png" alt="" />
-            <div className="">
-              <h2 className=" text-2xl font-bold">Senior UX Designer</h2>
-              <p className="text-primary">Highspeed Studios</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-6">
-            <img src="https://i.ibb.co/PtVtgtQ/icSalary.png" alt="" />
-            <div className="">
-              <h2 className=" text-xl font-semibold">$14,000 - $25,000</h2>
-              <p className=" text-[#8A8A8A]">Monthly Salary</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-6">
-            <img src="https://i.ibb.co/5rT0StQ/ic-Location.png" alt="" />
-            <div className="">
-              <h2 className=" text-xl font-semibold">London, England</h2>
-              <p className=" text-[#8A8A8A]">Location</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-6">
-            <button className="btn rounded-full text-primary border-none hover:btn-primary capitalize bg-[#F0EEFF]">
-              Apply Now
-            </button>
-            <img
-              className=" cursor-pointer"
-              src="https://i.ibb.co/JBQJfJ8/btnBook.png"
-              alt=""
-            />
-          </div>
-        </div>
-        <div className=" grid xl:grid-cols-4 md:grid-cols-2 p-7 gap-7 shadow-lg hover:shadow-2xl rounded-md mb-7 xl:justify-items-center md:justify-items-start ease-in duration-300">
-          <div className=" flex items-center gap-7  ">
-            <img src="https://i.ibb.co/rkXzcqK/company-Logo.png" alt="" />
-            <div className="">
-              <h2 className=" text-2xl font-bold">Senior UX Designer</h2>
-              <p className="text-primary">Highspeed Studios</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-6">
-            <img src="https://i.ibb.co/PtVtgtQ/icSalary.png" alt="" />
-            <div className="">
-              <h2 className=" text-xl font-semibold">$14,000 - $25,000</h2>
-              <p className=" text-[#8A8A8A]">Monthly Salary</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-6">
-            <img src="https://i.ibb.co/5rT0StQ/ic-Location.png" alt="" />
-            <div className="">
-              <h2 className=" text-xl font-semibold">London, England</h2>
-              <p className=" text-[#8A8A8A]">Location</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-6">
-            <button className="btn rounded-full text-primary border-none hover:btn-primary capitalize bg-[#F0EEFF]">
-              Apply Now
-            </button>
-            <img
-              className=" cursor-pointer"
-              src="https://i.ibb.co/JBQJfJ8/btnBook.png"
-              alt=""
-            />
-          </div>
-        </div>
-        <div className=" grid xl:grid-cols-4 md:grid-cols-2 p-7 gap-7 shadow-lg hover:shadow-2xl rounded-md mb-7 xl:justify-items-center md:justify-items-start ease-in duration-300">
-          <div className=" flex items-center gap-7  ">
-            <img src="https://i.ibb.co/rkXzcqK/company-Logo.png" alt="" />
-            <div className="">
-              <h2 className=" text-2xl font-bold">Senior UX Designer</h2>
-              <p className="text-primary">Highspeed Studios</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-6">
-            <img src="https://i.ibb.co/PtVtgtQ/icSalary.png" alt="" />
-            <div className="">
-              <h2 className=" text-xl font-semibold">$14,000 - $25,000</h2>
-              <p className=" text-[#8A8A8A]">Monthly Salary</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-6">
-            <img src="https://i.ibb.co/5rT0StQ/ic-Location.png" alt="" />
-            <div className="">
-              <h2 className=" text-xl font-semibold">London, England</h2>
-              <p className=" text-[#8A8A8A]">Location</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-6">
-            <button className="btn rounded-full text-primary border-none hover:btn-primary capitalize bg-[#F0EEFF]">
-              Apply Now
-            </button>
-            <img
-              className=" cursor-pointer"
-              src="https://i.ibb.co/JBQJfJ8/btnBook.png"
-              alt=""
-            />
-          </div>
-        </div>
-        <div className=" grid xl:grid-cols-4 md:grid-cols-2 p-7 gap-7 shadow-lg hover:shadow-2xl rounded-md mb-7 xl:justify-items-center md:justify-items-start ease-in duration-300">
-          <div className=" flex items-center gap-7  ">
-            <img src="https://i.ibb.co/rkXzcqK/company-Logo.png" alt="" />
-            <div className="">
-              <h2 className=" text-2xl font-bold">Senior UX Designer</h2>
-              <p className="text-primary">Highspeed Studios</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-6">
-            <img src="https://i.ibb.co/PtVtgtQ/icSalary.png" alt="" />
-            <div className="">
-              <h2 className=" text-xl font-semibold">$14,000 - $25,000</h2>
-              <p className=" text-[#8A8A8A]">Monthly Salary</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-6">
-            <img src="https://i.ibb.co/5rT0StQ/ic-Location.png" alt="" />
-            <div className="">
-              <h2 className=" text-xl font-semibold">London, England</h2>
-              <p className=" text-[#8A8A8A]">Location</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-6">
-            <button className="btn rounded-full text-primary border-none hover:btn-primary capitalize bg-[#F0EEFF]">
-              Apply Now
-            </button>
-            <img
-              className=" cursor-pointer"
-              src="https://i.ibb.co/JBQJfJ8/btnBook.png"
-              alt=""
-            />
-          </div>
-        </div>
-        <div className=" grid xl:grid-cols-4 md:grid-cols-2 p-7 gap-7 shadow-lg hover:shadow-2xl rounded-md mb-7 xl:justify-items-center md:justify-items-start ease-in duration-300">
-          <div className=" flex items-center gap-7  ">
-            <img src="https://i.ibb.co/rkXzcqK/company-Logo.png" alt="" />
-            <div className="">
-              <h2 className=" text-2xl font-bold">Senior UX Designer</h2>
-              <p className="text-primary">Highspeed Studios</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-6">
-            <img src="https://i.ibb.co/PtVtgtQ/icSalary.png" alt="" />
-            <div className="">
-              <h2 className=" text-xl font-semibold">$14,000 - $25,000</h2>
-              <p className=" text-[#8A8A8A]">Monthly Salary</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-6">
-            <img src="https://i.ibb.co/5rT0StQ/ic-Location.png" alt="" />
-            <div className="">
-              <h2 className=" text-xl font-semibold">London, England</h2>
-              <p className=" text-[#8A8A8A]">Location</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-6">
-            <button className="btn rounded-full text-primary border-none hover:btn-primary capitalize bg-[#F0EEFF]">
-              Apply Now
-            </button>
-            <img
-              className=" cursor-pointer"
-              src="https://i.ibb.co/JBQJfJ8/btnBook.png"
-              alt=""
-            />
-          </div>
-        </div>
-        <div className=" grid xl:grid-cols-4 md:grid-cols-2 p-7 gap-7 shadow-lg hover:shadow-2xl rounded-md mb-7 xl:justify-items-center md:justify-items-start ease-in duration-300">
-          <div className=" flex items-center gap-7  ">
-            <img src="https://i.ibb.co/rkXzcqK/company-Logo.png" alt="" />
-            <div className="">
-              <h2 className=" text-2xl font-bold">Senior UX Designer</h2>
-              <p className="text-primary">Highspeed Studios</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-6">
-            <img src="https://i.ibb.co/PtVtgtQ/icSalary.png" alt="" />
-            <div className="">
-              <h2 className=" text-xl font-semibold">$14,000 - $25,000</h2>
-              <p className=" text-[#8A8A8A]">Monthly Salary</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-6">
-            <img src="https://i.ibb.co/5rT0StQ/ic-Location.png" alt="" />
-            <div className="">
-              <h2 className=" text-xl font-semibold">London, England</h2>
-              <p className=" text-[#8A8A8A]">Location</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-6">
-            <button className="btn rounded-full text-primary border-none hover:btn-primary capitalize bg-[#F0EEFF]">
-              Apply Now
-            </button>
-            <img
-              className=" cursor-pointer"
-              src="https://i.ibb.co/JBQJfJ8/btnBook.png"
-              alt=""
-            />
-          </div>
-        </div>
-        <div className=" grid xl:grid-cols-4 md:grid-cols-2 p-7 gap-7 shadow-lg hover:shadow-2xl rounded-md mb-7 xl:justify-items-center md:justify-items-start ease-in duration-300">
-          <div className=" flex items-center gap-7  ">
-            <img src="https://i.ibb.co/rkXzcqK/company-Logo.png" alt="" />
-            <div className="">
-              <h2 className=" text-2xl font-bold">Senior UX Designer</h2>
-              <p className="text-primary">Highspeed Studios</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-6">
-            <img src="https://i.ibb.co/PtVtgtQ/icSalary.png" alt="" />
-            <div className="">
-              <h2 className=" text-xl font-semibold">$14,000 - $25,000</h2>
-              <p className=" text-[#8A8A8A]">Monthly Salary</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-6">
-            <img src="https://i.ibb.co/5rT0StQ/ic-Location.png" alt="" />
-            <div className="">
-              <h2 className=" text-xl font-semibold">London, England</h2>
-              <p className=" text-[#8A8A8A]">Location</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-6">
-            <button className="btn rounded-full text-primary border-none hover:btn-primary capitalize bg-[#F0EEFF]">
-              Apply Now
-            </button>
-            <img
-              className=" cursor-pointer"
-              src="https://i.ibb.co/JBQJfJ8/btnBook.png"
-              alt=""
-            />
-          </div>
-        </div>
-        <div className=" grid xl:grid-cols-4 md:grid-cols-2 p-7 gap-7 shadow-lg hover:shadow-2xl rounded-md mb-7 xl:justify-items-center md:justify-items-start ease-in duration-300">
-          <div className=" flex items-center gap-7  ">
-            <img src="https://i.ibb.co/rkXzcqK/company-Logo.png" alt="" />
-            <div className="">
-              <h2 className=" text-2xl font-bold">Senior UX Designer</h2>
-              <p className="text-primary">Highspeed Studios</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-6">
-            <img src="https://i.ibb.co/PtVtgtQ/icSalary.png" alt="" />
-            <div className="">
-              <h2 className=" text-xl font-semibold">$14,000 - $25,000</h2>
-              <p className=" text-[#8A8A8A]">Monthly Salary</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-6">
-            <img src="https://i.ibb.co/5rT0StQ/ic-Location.png" alt="" />
-            <div className="">
-              <h2 className=" text-xl font-semibold">London, England</h2>
-              <p className=" text-[#8A8A8A]">Location</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-6">
-            <button className="btn rounded-full text-primary border-none hover:btn-primary capitalize bg-[#F0EEFF]">
-              Apply Now
-            </button>
-            <img
-              className=" cursor-pointer"
-              src="https://i.ibb.co/JBQJfJ8/btnBook.png"
-              alt=""
-            />
-          </div>
-        </div>
-        <div className=" grid xl:grid-cols-4 md:grid-cols-2 p-7 gap-7 shadow-lg hover:shadow-2xl rounded-md mb-7 xl:justify-items-center md:justify-items-start ease-in duration-300">
-          <div className=" flex items-center gap-7  ">
-            <img src="https://i.ibb.co/rkXzcqK/company-Logo.png" alt="" />
-            <div className="">
-              <h2 className=" text-2xl font-bold">Senior UX Designer</h2>
-              <p className="text-primary">Highspeed Studios</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-6">
-            <img src="https://i.ibb.co/PtVtgtQ/icSalary.png" alt="" />
-            <div className="">
-              <h2 className=" text-xl font-semibold">$14,000 - $25,000</h2>
-              <p className=" text-[#8A8A8A]">Monthly Salary</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-6">
-            <img src="https://i.ibb.co/5rT0StQ/ic-Location.png" alt="" />
-            <div className="">
-              <h2 className=" text-xl font-semibold">London, England</h2>
-              <p className=" text-[#8A8A8A]">Location</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-6">
-            <button className="btn rounded-full text-primary border-none hover:btn-primary capitalize bg-[#F0EEFF]">
-              Apply Now
-            </button>
-            <img
-              className=" cursor-pointer"
-              src="https://i.ibb.co/JBQJfJ8/btnBook.png"
-              alt=""
-            />
-          </div>
-        </div>
+        ))}
       </div>
 
       <div className=" flex  text-center justify-center">
@@ -625,7 +202,7 @@ const JobShow = () => {
           <span className=" hover:bg-primary text-primary hover:text-white p-3 px-5 rounded-full">
             1
           </span>
-          <span className=" hover:bg-primary text-primary hover:text-white p-3 px-5 rounded-full">
+          <span className=" bg-primary  text-white p-3 px-5 rounded-full">
             2
           </span>
           <span className=" hover:bg-primary text-primary hover:text-white p-3 px-5 rounded-full">

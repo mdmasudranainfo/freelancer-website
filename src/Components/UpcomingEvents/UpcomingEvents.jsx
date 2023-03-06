@@ -4,9 +4,9 @@ import { FaRegCalendar } from "react-icons/fa";
 const UpcomingEvents = () => {
   return (
     <div className="container mx-auto mt-12">
-      <div className=" flex justify-between items-center">
+      <div className=" lg:flex md:block mt-2 justify-between items-center ">
         <h1 className="font-bold text-3xl">Upcoming Events</h1>
-        <div className=" flex gap-2">
+        <div className=" flex gap-2 mt-5 md:mt-0  ">
           <div className="relative">
             <select
               id="countries"

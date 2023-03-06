@@ -17,15 +17,17 @@ const Footer = () => {
           <h2 className="xxl:text-4xl xl:text-2xl mb-10">
             Don’t miss our weekly updates <br /> about freelancer career
           </h2>
-          <div className=" flex items-center justify-between w-full  border-2 border-slate-700 rounded-full">
-            <input
-              type="text"
-              placeholder="Enter your email address..."
-              className="input   w-full bg-transparent   "
-            />
-            <button className=" top-2 right-4 bg-[#FE8D4D] rounded-full btn btn-md">
-              SUBSCRIBE
-            </button>
+          <div className="">
+            <div className=" flex items-center justify-between w-full  border-2 border-slate-700 rounded-full">
+              <input
+                type="text"
+                placeholder="Enter your email address..."
+                className="input   w-full bg-transparent   "
+              />
+              <button className=" top-2 right-4 bg-[#FE8D4D] rounded-full btn btn-md m-1">
+                SUBSCRIBE
+              </button>
+            </div>
           </div>
         </div>
 
@@ -143,12 +145,13 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <hr className="border" />
+
         {/* copyright  */}
-        <div className="flex justify-between  mt-6">
-          <p>Ziro Freelancer Landing Website - © 2020 All Rights Reserved</p>
-          <p>Made with ♥ by Peterdraw</p>
-        </div>
+      </div>
+      <div className="divider"></div>
+      <div className="md:flex block  justify-between  mt-6 container mx-auto ">
+        <p>Ziro Freelancer Landing Website - © 2020 All Rights Reserved</p>
+        <p>Made with ♥ by Peterdraw</p>
       </div>
     </div>
   );

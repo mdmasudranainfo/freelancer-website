@@ -1,12 +1,17 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
+import { allPerson } from "../../Components/API_File/API_FILE";
 import Brands from "../../Components/Brands/Brands";
 import FeaturedProfile from "../../Components/FeaturedProfile/FeaturedProfile";
+
+const parsons = allPerson;
+
+console.log(parsons);
 
 const FreelancerList = () => {
   return (
     <div>
-      <div className=" bg-[url('https://i.ibb.co/2MhjZ2M/background.png')] bg-center ">
+      <div className=" bg-[url('https://i.ibb.co/2MhjZ2M/background.png')] bg-center bg-cover bg-no-repeat">
         <div className=" container mx-auto relative ">
           {/* <img src="" alt="" /> */}
           <div className=" py-72 w-full h-full flex justify-center items-center flex-col">
@@ -16,7 +21,7 @@ const FreelancerList = () => {
               freelancers in the world through ziro
             </h1>
 
-            <div className=" flex items-center justify-between border shadow-sm pl-5 rounded-full z-50 overflow-hidden mt-16">
+            <div className=" lg:flex block items-center justify-between border shadow-sm pl-5 lg:rounded-full rounded-lg z-50 overflow-hidden mt-16">
               <div className=" relative">
                 <select className="select pl-3  w-full max-w-xs focus:outline-none">
                   <option disabled selected>
@@ -68,13 +73,13 @@ const FreelancerList = () => {
                 />
               </div>
               <div className="">
-                <button className=" btn btn-primary rounded-full border-0 bg-[#FE8D4D]">
+                <button className=" btn btn-primary rounded-full border-0 bg-[#FE8D4D] lg:my-0 my-2">
                   Search
                 </button>
               </div>
             </div>
 
-            <div className="flex flex-wrap lg:gap-7 gap-2 mt-7 w-[700px]">
+            <div className="flex flex-wrap lg:gap-7 gap-2 mt-7 xl:w-6/12 lg:w-full justify-center">
               <button className="capitalize btn hover:btn-primary bg-white text-black border-stone-300 rounded-full">
                 Web Dev
               </button>
@@ -99,8 +104,8 @@ const FreelancerList = () => {
               <button className="capitalize btn hover:btn-primary bg-white text-black border-stone-300 rounded-full">
                 Accounting
               </button>
-              <button className="capitalize btn hover:btn-primary bg-white text-black border-stone-300 rounded-full">
-                View all categories
+              <button className="capitalize btn hover:btn-primary bg-white text-primary border-stone-300 rounded-full">
+                Try advance search mode
               </button>
             </div>
           </div>
@@ -240,162 +245,91 @@ const FreelancerList = () => {
         </div>
         {/* profile freelancer  grid*/}
         <div className=" grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 mt-9">
-          <div className=" shadow-md p-10 rounded-xl ">
-            <div className=" flex justify-center relative">
-              <img src="https://i.ibb.co/g9YVky1/placeholder.png" alt="" />
-              <button className="btn myActive absolute bottom-[-10px] btn-sm rounded-full bg-[#30C736] hover:bg-[#30C736] border-none">
-                <svg
-                  className="dot"
-                  width="9"
-                  height="10"
-                  viewBox="0 0 9 10"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="4.5" cy="4.50171" r="4.5" fill="white" />
-                </svg>
-                AVAILABLE
-              </button>
-              <div
-                className=" absolute top-0 right-0 cursor-pointer
+          {parsons.map((profile) => (
+            <div className=" shadow-md p-10 rounded-xl ">
+              <div className=" flex justify-center relative">
+                <img src={profile?.img} alt="" />
+                <button
+                  className={`btn myActive absolute bottom-[-10px] btn-sm rounded-full ${
+                    profile.active
+                      ? "bg-[#30C736] hover:bg-[#30C736] "
+                      : "bg-[#8A8A8A]"
+                  } border-none`}>
+                  <svg
+                    className="dot"
+                    width="9"
+                    height="10"
+                    viewBox="0 0 9 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="4.5" cy="4.50171" r="4.5" fill="white" />
+                  </svg>
+                  AVAILABLE
+                </button>
+                <div
+                  className=" absolute top-0 right-0 cursor-pointer
             ">
-                <svg
-                  className=""
-                  width="25"
-                  height="24"
-                  viewBox="0 0 25 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M13.9917 12.0017C13.9917 11.4497 13.544 11.0023 12.9917 11.0023C12.4394 11.0023 11.9917 11.4497 11.9917 12.0017C11.9917 12.5536 12.4394 13.001 12.9917 13.001C13.544 13.001 13.9917 12.5536 13.9917 12.0017Z"
-                    stroke="#363848"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M6.9917 12.0017C6.9917 11.4497 6.54398 11.0023 5.9917 11.0023C5.43941 11.0023 4.9917 11.4497 4.9917 12.0017C4.9917 12.5536 5.43941 13.001 5.9917 13.001C6.54398 13.001 6.9917 12.5536 6.9917 12.0017Z"
-                    stroke="#363848"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M20.9912 12.0017C20.9912 11.4497 20.5435 11.0023 19.9912 11.0023C19.4389 11.0023 18.9912 11.4497 18.9912 12.0017C18.9912 12.5536 19.4389 13.001 19.9912 13.001C20.5435 13.001 20.9912 12.5536 20.9912 12.0017Z"
-                    stroke="#363848"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
+                  <svg
+                    className=""
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M13.9917 12.0017C13.9917 11.4497 13.544 11.0023 12.9917 11.0023C12.4394 11.0023 11.9917 11.4497 11.9917 12.0017C11.9917 12.5536 12.4394 13.001 12.9917 13.001C13.544 13.001 13.9917 12.5536 13.9917 12.0017Z"
+                      stroke="#363848"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M6.9917 12.0017C6.9917 11.4497 6.54398 11.0023 5.9917 11.0023C5.43941 11.0023 4.9917 11.4497 4.9917 12.0017C4.9917 12.5536 5.43941 13.001 5.9917 13.001C6.54398 13.001 6.9917 12.5536 6.9917 12.0017Z"
+                      stroke="#363848"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M20.9912 12.0017C20.9912 11.4497 20.5435 11.0023 19.9912 11.0023C19.4389 11.0023 18.9912 11.4497 18.9912 12.0017C18.9912 12.5536 19.4389 13.001 19.9912 13.001C20.5435 13.001 20.9912 12.5536 20.9912 12.0017Z"
+                      stroke="#363848"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
               </div>
-            </div>
-            <h2 className="text-2xl text-center font-semibold mt-12">
-              Angela Moss
-            </h2>
-            <p className="text-center">Content Writer</p>
-            {/* start icone  */}
-            <div className="flex justify-center mt-3 mb-7 gap-2">
-              <FaStar className=" text-[#FF8412]" />
-              <FaStar className=" text-[#FF8412]" />
-              <FaStar className=" text-[#FF8412]" />
-              <FaStar className=" text-[#FF8412]" />
-              <FaStar className=" text-[#D8D8D8]" />
-            </div>
-            <p className="flex justify-between mb-3">
-              <span className=" text-[#636363]">From</span>
-              <span className="font-semibold">Jakarta, Indonesia</span>
-            </p>
-            <p className="flex justify-between mb-3">
-              <span className=" text-[#636363]">Member since</span>
-              <span className="font-semibold">Oct 2008</span>
-            </p>
-            <p className="flex justify-between mb-3">
-              <span className=" text-[#636363]">Rate</span>
-              <span className="font-semibold">$50/hr</span>
-            </p>
-            <p className="flex justify-between mb-3">
-              <span className=" text-[#636363]">Latest Review</span>
-              <span className="font-semibold">4 Days ago</span>
-            </p>
-          </div>
-          <div className=" shadow-md p-10 rounded-xl ">
-            <div className=" flex justify-center relative">
-              <img src="https://i.ibb.co/g9YVky1/placeholder.png" alt="" />
-              <button className="btn myActive absolute bottom-[-10px] btn-sm rounded-full bg-[#30C736] hover:bg-[#30C736] border-none">
-                <svg
-                  className="dot"
-                  width="9"
-                  height="10"
-                  viewBox="0 0 9 10"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="4.5" cy="4.50171" r="4.5" fill="white" />
-                </svg>
-                AVAILABLE
-              </button>
-              <div
-                className=" absolute top-0 right-0 cursor-pointer
-            ">
-                <svg
-                  className=""
-                  width="25"
-                  height="24"
-                  viewBox="0 0 25 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M13.9917 12.0017C13.9917 11.4497 13.544 11.0023 12.9917 11.0023C12.4394 11.0023 11.9917 11.4497 11.9917 12.0017C11.9917 12.5536 12.4394 13.001 12.9917 13.001C13.544 13.001 13.9917 12.5536 13.9917 12.0017Z"
-                    stroke="#363848"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M6.9917 12.0017C6.9917 11.4497 6.54398 11.0023 5.9917 11.0023C5.43941 11.0023 4.9917 11.4497 4.9917 12.0017C4.9917 12.5536 5.43941 13.001 5.9917 13.001C6.54398 13.001 6.9917 12.5536 6.9917 12.0017Z"
-                    stroke="#363848"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M20.9912 12.0017C20.9912 11.4497 20.5435 11.0023 19.9912 11.0023C19.4389 11.0023 18.9912 11.4497 18.9912 12.0017C18.9912 12.5536 19.4389 13.001 19.9912 13.001C20.5435 13.001 20.9912 12.5536 20.9912 12.0017Z"
-                    stroke="#363848"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
+              <h2 className="text-2xl text-center font-semibold mt-12">
+                {profile?.name}
+              </h2>
+              <p className="text-center"> {profile?.profession}</p>
+              {/* start icone  */}
+              <div className="flex justify-center mt-3 mb-7 gap-2">
+                <FaStar className=" text-[#FF8412]" />
+                <FaStar className=" text-[#FF8412]" />
+                <FaStar className=" text-[#FF8412]" />
+                <FaStar className=" text-[#FF8412]" />
+                <FaStar className=" text-[#D8D8D8]" />
               </div>
+              <p className="flex justify-between mb-3">
+                <span className=" text-[#636363]">From</span>
+                <span className="font-semibold"> {profile?.country}</span>
+              </p>
+              <p className="flex justify-between mb-3">
+                <span className=" text-[#636363]">Member since</span>
+                <span className="font-semibold"> {profile?.joining}</span>
+              </p>
+              <p className="flex justify-between mb-3">
+                <span className=" text-[#636363]">Rate</span>
+                <span className="font-semibold"> {profile?.rate}</span>
+              </p>
+              <p className="flex justify-between mb-3">
+                <span className=" text-[#636363]">Latest Review</span>
+                <span className="font-semibold"> {profile?.review}</span>
+              </p>
             </div>
-            <h2 className="text-2xl text-center font-semibold mt-12">
-              Angela Moss
-            </h2>
-            <p className="text-center">Content Writer</p>
-            {/* start icone  */}
-            <div className="flex justify-center mt-3 mb-7 gap-2">
-              <FaStar className=" text-[#FF8412]" />
-              <FaStar className=" text-[#FF8412]" />
-              <FaStar className=" text-[#FF8412]" />
-              <FaStar className=" text-[#FF8412]" />
-              <FaStar className=" text-[#D8D8D8]" />
-            </div>
-            <p className="flex justify-between mb-3">
-              <span className=" text-[#636363]">From</span>
-              <span className="font-semibold">Jakarta, Indonesia</span>
-            </p>
-            <p className="flex justify-between mb-3">
-              <span className=" text-[#636363]">Member since</span>
-              <span className="font-semibold">Oct 2008</span>
-            </p>
-            <p className="flex justify-between mb-3">
-              <span className=" text-[#636363]">Rate</span>
-              <span className="font-semibold">$50/hr</span>
-            </p>
-            <p className="flex justify-between mb-3">
-              <span className=" text-[#636363]">Latest Review</span>
-              <span className="font-semibold">4 Days ago</span>
-            </p>
-          </div>
+          ))}
         </div>
 
         {/* pasination */}

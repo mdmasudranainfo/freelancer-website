@@ -5,6 +5,7 @@ import CounterSection from "../../Components/CounterSection/CounterSection";
 import CustomerSay from "../../Components/CustomerSay/CustomerSay";
 import FeaturedJobs from "../../Components/FeaturedJobs/FeaturedJobs";
 import FeaturedProfile from "../../Components/FeaturedProfile/FeaturedProfile";
+import LatestNews from "../../Components/News/News";
 import News from "../../Components/News/News";
 import Pricing from "../../Components/Pricing/Pricing";
 import StartJob from "../../Components/StartJob/StartJob";
@@ -23,7 +24,8 @@ const Home = () => {
       <CustomerSay />
       <CounterSection />
       <Pricing />
-      <News />
+      {/* <News /> */}
+      <LatestNews></LatestNews>
     </div>
   );
 };

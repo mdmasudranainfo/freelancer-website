@@ -4,15 +4,17 @@ import { Link } from "react-router-dom";
 const FeaturedJobs = () => {
   return (
     <div className="container mx-auto mt-52">
-      <h1 className=" text-4xl font-semibold text-center">Featured Jobs</h1>
-      <p className="mt-5 text-center">
+      <h1 data-aos="fade-up" className=" text-4xl font-semibold text-center">
+        Featured Jobs
+      </h1>
+      <p data-aos="fade-up" className="mt-5 text-center">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br />{" "}
         eiusmod tempor incididunt ut labore et dolore magna aliqua
       </p>
 
       {/* card grid */}
       <div className="mt-16 grid  xl:grid-cols-4  lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-7">
-        <div className="p-5 shadow-xl rounded-md ">
+        <div data-aos="fade-up" className="p-5 shadow-xl rounded-md ">
           <div className=" flex justify-end">
             <img
               className="cursor-pointer"
@@ -46,7 +48,7 @@ const FeaturedJobs = () => {
             <button className="btn rounded-full btn-primary">Apply Now</button>
           </div>
         </div>
-        <div className="p-5 shadow-xl rounded-md ">
+        <div data-aos="fade-up" className="p-5 shadow-xl rounded-md ">
           <div className=" flex justify-end">
             <img
               className="cursor-pointer"
@@ -80,7 +82,7 @@ const FeaturedJobs = () => {
             <button className="btn rounded-full btn-primary">Apply Now</button>
           </div>
         </div>
-        <div className="p-5 shadow-xl rounded-md ">
+        <div data-aos="fade-up" className="p-5 shadow-xl rounded-md ">
           <div className=" flex justify-end">
             <img
               className="cursor-pointer"
@@ -114,7 +116,7 @@ const FeaturedJobs = () => {
             <button className="btn rounded-full btn-primary">Apply Now</button>
           </div>
         </div>
-        <div className="p-5 shadow-xl rounded-md ">
+        <div data-aos="fade-up" className="p-5 shadow-xl rounded-md ">
           <div className=" flex justify-end">
             <img
               className="cursor-pointer"

@@ -10,7 +10,7 @@ const WhayChoce = () => {
       </p>
       {/* grid */}
       <div className=" grid lg:grid-cols-3 md:grid-cols-2 sm:cols-1 gap-10 mt-16">
-        <div className=" shadow-lg p-8 rounded-xl">
+        <div data-aos="fade-up" className=" shadow-lg p-8 rounded-xl">
           <img
             className="w-20"
             src="https://i.ibb.co/GMJb27f/icon.png"
@@ -23,7 +23,7 @@ const WhayChoce = () => {
             aliqua.{" "}
           </p>
         </div>
-        <div className=" shadow-lg p-8 rounded-xl">
+        <div data-aos="fade-up" className=" shadow-lg p-8 rounded-xl">
           <img
             className="w-20"
             src="https://i.ibb.co/G5vRP3P/icon3.png"
@@ -37,7 +37,7 @@ const WhayChoce = () => {
           </p>
         </div>
 
-        <div className=" shadow-lg p-8 rounded-xl">
+        <div data-aos="fade-up" className=" shadow-lg p-8 rounded-xl">
           <img
             className="w-20"
             src="https://i.ibb.co/bJznd91/icon2.png"

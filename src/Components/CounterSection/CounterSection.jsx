@@ -5,7 +5,7 @@ const backround = "https://i.ibb.co/SvRcZNf/background.png";
 
 const CounterSection = () => {
   return (
-    <div className="container mx-auto mt-52">
+    <div data-aos="fade-up" className="container mx-auto mt-52">
       <div
         className="p-10 bg-center items-center	 grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 rounded-2xl	"
         style={{ backgroundImage: `url(${backround})` }}>
